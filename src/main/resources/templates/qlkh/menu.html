@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<!-- Sidebar  -->
+<nav id="sidebar">
+    <div th:replace="~{/fragments/sidebar_header :: div.sidebar-header}"></div>
+
+    <ul class="list-unstyled components">
+        <li class="active">
+            <a href="/app/user/dashboard"><i class="fa fa-fw fa-globe"></i>Trang chủ</a>
+        </li>
+        <li>
+            <a href="#pageManage" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-fw fa-bar-chart"></i>Quản lý</a>
+            <ul class="collapse list-unstyled" id="pageManage">
+                <li>
+                    <a href="#">Quản lý hàng hóa</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-fw fa-wrench"></i>Liên hệ</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

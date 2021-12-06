@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CSKH Dashboard</title>
+    <th:block th:insert="~{common/library :: head/link}"></th:block>
+    <th:block th:insert="~{common/library :: head/script}"></th:block>
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/header.css}" href="../../../css/header.css">
+</head>
+<body>
+<th:block th:insert="~{/fragments/spinner :: #loader}"></th:block>
+
+<div class="wrapper" style="display: none">
+    <!-- Sidebar -->
+    <th:block th:replace="~{cskh/menu :: nav}"></th:block>
+
+    <!-- Page Content  -->
+    <div id="content">
+        <!-- Header -->
+        <nav th:replace="~{/common/header :: nav}"></nav>
+
+        <!-- Content -->
+        <article>
+            <div class="container">
+                <p>Test admin</p>
+            </div>
+        </article>
+    </div>
+</div>
+</body>
+</html>

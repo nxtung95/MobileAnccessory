@@ -1,0 +1,15 @@
+#navbarSupportedContent ul li {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+#navbarSupportedContent ul li:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+}
